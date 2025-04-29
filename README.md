@@ -1,7 +1,7 @@
 # Adobe Security – Take-Home Exercise  
 
 **Role target:** Product Security Engineer – Edge / WAF Focus  
-**Effort cap:** 4 – 6 focused hours  
+**Effort cap:** 8 focused hours  
 **Deadline:** Submit within **72 hours** of receiving the repo invite  
 
 ---
