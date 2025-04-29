@@ -2,7 +2,7 @@
 
 **Role target:** Product Security Engineer – Edge / WAF Focus  
 **Effort:** 8 focused hours  
-**Deadline:** Submit within **72 hours** of receiving the repo invite  
+**Deadline:** Submit within **120 hours** of receiving the repo invite  
 
 ---
 
