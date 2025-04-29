@@ -1,16 +1,17 @@
 # Adobe Security – Take-Home Exercise  
-**Role target:** Platform Security Engineer – Edge / WAF Focus  
+
+**Role target:** Product Security Engineer – Edge / WAF Focus  
 **Effort cap:** 4 – 6 focused hours  
 **Deadline:** Submit within **72 hours** of receiving the repo invite  
 
 ---
 
 ## 1. Scenario
-A new public site—**OWASP Juice Shop**—must launch next week. Before DNS cut-over we need proof that edge security is:
+A new public site—**OWASP Juice Shop**—must launch next week. Before DNS cut-over, we need proof that edge security is:
 
 1. **Repeatable** – any future service can inherit the same guardrails in minutes.  
 2. **Rapidly tunable** – you can ship an emergency WAF rule in **\< 30 min**.  
-3. **Measurable** – one KPI shows how well the edge is protecting the service.
+3. **Measurable** – One KPI shows how well the edge is protecting the service.
 
 ---
 
@@ -18,7 +19,8 @@ A new public site—**OWASP Juice Shop**—must launch next week. Before DNS cut
 
 ### 0 – Service & Front Door  
 * Deploy **OWASP Juice Shop** (`ghcr.io/juice-shop/juice-shop`) on **one** of:  
-  * ECS Fargate  
+  * ECS Fargate
+  * EC2
   * EKS  
   * Lambda container + ALB  
 * Expose it through **ALB** *or* **CloudFront**.  
@@ -44,10 +46,10 @@ A new public site—**OWASP Juice Shop**—must launch next week. Before DNS cut
   * finishes in **≤ 60 s** wall time.
 
 ### 4 – Smoke Test  
-* Script or Postman collection that  
+* A script or Postman collection that  
   * sends a benign request → **200 OK**,  
   * sends the SQLi payload → **403** (blocked),  
-  * prints both results.
+  * Prints both results.
 
 ### 5 – Log Pipeline & KPI  
 * Enable **WAF logging → Kinesis Firehose → S3** (same account).  
@@ -65,7 +67,7 @@ A new public site—**OWASP Juice Shop**—must launch next week. Before DNS cut
   * prerequisites & variable setup,  
   * `make deploy` (or similar) to stand everything up in **< 15 min**,  
   * how to run `push_block.py` and the smoke test,  
-  * how to execute the Athena query and view results.
+  * How to execute the Athena query and view results.
 
 **Stretch goals (optional)**  
 * Roll WebACLs out via **AWS Firewall Manager**.  
@@ -75,7 +77,6 @@ A new public site—**OWASP Juice Shop**—must launch next week. Before DNS cut
 ---
 
 ## 3. Submission Process
-1. **Fork** the private starter repo we share.  
+1. Create a GitHub repo
 2. Commit early & often—**we review your git history**.  
-3. Open a PR to `main` that includes code, workflows, screenshots/CLI output of the smoke test, and KPI results.  
-4. **Never commit secrets** (use TF vars, AWS profiles, `aws-vault`, etc.).
+3. Open a PR to `main` that includes code, workflows, screenshots/CLI output of the smoke test, KPI results, and about 20 prompts if you used AI.  
