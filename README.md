@@ -20,7 +20,7 @@ A new public-facing web application—**OWASP Juice Shop**—is scheduled to lau
 
 ### 0 – Service & Front Door
 
-* Deploy the **OWASP Juice Shop** application (using the public container image: `ghcr.io/juice-shop/juice-shop`).
+* Deploy the **OWASP Juice Shop** application (using the public container image or using EC2 instead of docker)
     * **Deployment Target:** Use **AWS ECS Fargate** or similar, EKS, Fargate, Lambda or even EC2 
 * Expose the application publicly using either an **AWS Application Load Balancer (ALB)** *or* **Amazon CloudFront** distribution.
 * Define and manage **all** AWS infrastructure components using **Terraform** *or* **AWS CDK**.
