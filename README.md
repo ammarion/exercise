@@ -49,7 +49,6 @@ A new public-facing web application—**OWASP Juice Shop**—is scheduled to lau
     * Accept either an IP address/CIDR range *or* a URI string/regex pattern as input.
     * Create or update a **WAF rule** within the WebACL to **block** requests matching the provided input.
     * Complete its execution (creating/updating the rule via AWS API) in **less than 60 seconds** wall time.
-    * *(Note: Native WAF rules do not have automatic TTLs. Auto-cleanup is outside the scope of this script's requirements.)*
 
 ### 4 – Smoke Test
 
@@ -69,7 +68,6 @@ A new public-facing web application—**OWASP Juice Shop**—is scheduled to lau
     * `percent_blocked` (Percentage of total requests that were blocked)
     * `top_5_attack_vectors` (The top 5 rule labels/names that triggered blocks, grouped by label)
 * Include a brief explanation (≤ 200 words) in your README describing how monitoring this KPI (especially `%blocked` and `top_5_attack_vectors`) helps security teams tune rules, identify false positives, and potentially measure Mean Time To Respond (MTTR) for new threats.
-* **No AWS Account / Budget Concerns?** You may alternatively use the sample WAF log JSON files provided in the `/logs/sample/` directory of the starter repository to create your Athena table and demonstrate the query. Clearly state if you used this option.
 
 ### 6 – README / Runbook
 
