@@ -41,7 +41,6 @@ A new public-facing web application—**OWASP Juice Shop**—is scheduled to lau
     * Run a static analysis security tool on your IaC code (`tfsec` for Terraform *or* `cdk-nag` for CDK).
     * Generate an infrastructure plan (`terraform plan` or `cdk diff`) and post it as a comment on the Pull Request.
     * *(Conceptual)* Include a step that would require manual reviewer approval before allowing an `apply` / `deploy` action (the actual deployment is done manually for this exercise, but the workflow should show the gate).
-    * *Note:* You will need to configure GitHub Actions secrets to handle AWS credentials securely if you intend the workflow to interact directly with AWS during planning.
 
 ### 3 – Rapid-Mitigation Script
 
