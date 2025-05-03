@@ -101,5 +101,3 @@ These are not required but demonstrate deeper expertise:
 4.  Include evidence of successful execution:
     * Place outputs from your smoke test (Deliverable 4) and KPI query (Deliverable 5) either in a dedicated `/results` directory or embed them clearly within your `README.md`.
     * If you used AI assistance (like ChatGPT, Copilot, etc.), please include a brief summary or examples of key prompts used in your `README.md` or a separate file.
-5.  Open a **Pull Request** from your working branch to the `main` branch within your private repository. This PR represents your final submission. **Do not merge the PR.**
-6.  Notify the Adobe contact(s) once your PR is ready for review.
